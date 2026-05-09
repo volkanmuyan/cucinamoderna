@@ -1015,6 +1015,24 @@ p { max-width: 60ch; }
     .footer__legal { flex-wrap: wrap; justify-content: center; }
 }
 
+/* --------------------------------------------------------------------------
+   Images inside containers
+   -------------------------------------------------------------------------- */
+.collection-card__img img,
+.product-card__img img,
+.news-card__img img,
+.brand-story__media-inner img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-card__img { position: relative; }
+.news-card__img    { position: relative; }
+
 /* --- 480px --- */
 @media (max-width: 480px) {
     .hero__title { font-size: 52px; }
