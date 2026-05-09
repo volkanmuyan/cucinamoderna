@@ -1016,6 +1016,43 @@ p { max-width: 60ch; }
 }
 
 /* --------------------------------------------------------------------------
+   Language switcher
+   -------------------------------------------------------------------------- */
+.header__lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    flex-shrink: 0;
+}
+.header__lang-switch .sep {
+    color: rgba(255, 255, 255, 0.25);
+    transition: color var(--t) var(--ease);
+}
+.header.is-scrolled .header__lang-switch .sep { color: var(--color-border); }
+
+.lang-btn {
+    color: rgba(255, 255, 255, 0.45);
+    text-transform: uppercase;
+    padding-bottom: 1px;
+    transition: color var(--t) var(--ease), border-color var(--t) var(--ease);
+    border-bottom: 1px solid transparent;
+}
+.header.is-scrolled .lang-btn { color: var(--color-gray); }
+.lang-btn:hover { color: var(--color-gold); }
+
+.lang-btn--active {
+    color: var(--color-white);
+    border-bottom-color: currentColor;
+}
+.header.is-scrolled .lang-btn--active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+/* --------------------------------------------------------------------------
    Images inside containers
    -------------------------------------------------------------------------- */
 .collection-card__img img,

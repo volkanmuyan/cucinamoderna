@@ -91,7 +91,7 @@ if (newsletterForm) {
         }
 
         const originalText = btn.textContent;
-        btn.textContent    = 'Merci !';
+        btn.textContent    = document.documentElement.lang === 'nl' ? 'Dankuwel!' : 'Merci !';
         btn.style.background = '#4A7A45';
         btn.disabled = true;
         input.value  = '';
