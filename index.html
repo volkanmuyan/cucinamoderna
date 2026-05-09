@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cucina Moderna – Des cuisines d'exception alliant savoir-faire belge et design contemporain.">
+    <title>Cucina Moderna | Design de Cuisines Belges</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="header" id="header">
+        <div class="header__container">
+
+            <button class="header__menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <a href="index.html" class="header__logo">
+                <span class="logo-cucina">CUCINA</span>
+                <span class="logo-moderna">MODERNA</span>
+            </a>
+
+            <nav class="header__nav" id="mainNav" aria-label="Navigation principale">
+                <ul class="nav__list">
+
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="#" class="nav__link" aria-haspopup="true">
+                            Collections <span class="nav__arrow" aria-hidden="true">›</span>
+                        </a>
+                        <div class="dropdown" role="menu">
+                            <div class="dropdown__grid">
+                                <div class="dropdown__col">
+                                    <h4 class="dropdown__heading">Cuisines</h4>
+                                    <a href="collections/moderne.html" class="dropdown__link" role="menuitem">Cuisines Modernes</a>
+                                    <a href="collections/classique.html" class="dropdown__link" role="menuitem">Cuisines Classiques</a>
+                                    <a href="collections/exterieur.html" class="dropdown__link" role="menuitem">Cuisines d'Extérieur</a>
+                                </div>
+                                <div class="dropdown__col">
+                                    <h4 class="dropdown__heading">Espaces</h4>
+                                    <a href="collections/living.html" class="dropdown__link" role="menuitem">Espaces de Vie</a>
+                                    <a href="collections/tables-chaises.html" class="dropdown__link" role="menuitem">Tables &amp; Chaises</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="#" class="nav__link" aria-haspopup="true">
+                            La Marque <span class="nav__arrow" aria-hidden="true">›</span>
+                        </a>
+                        <div class="dropdown" role="menu">
+                            <div class="dropdown__col">
+                                <a href="a-propos.html" class="dropdown__link" role="menuitem">À Propos</a>
+                                <a href="durabilite.html" class="dropdown__link" role="menuitem">Durabilité</a>
+                                <a href="actualites.html" class="dropdown__link" role="menuitem">Actualités</a>
+                                <a href="carrieres.html" class="dropdown__link" role="menuitem">Carrières</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="#" class="nav__link" aria-haspopup="true">
+                            Assistance <span class="nav__arrow" aria-hidden="true">›</span>
+                        </a>
+                        <div class="dropdown" role="menu">
+                            <div class="dropdown__col">
+                                <a href="contact.html" class="dropdown__link" role="menuitem">Contact</a>
+                                <a href="garantie.html" class="dropdown__link" role="menuitem">Garantie</a>
+                                <a href="promotions.html" class="dropdown__link" role="menuitem">Promotions</a>
+                                <a href="revendeurs.html" class="dropdown__link" role="menuitem">Trouver un Revendeur</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="revendeurs.html" class="btn btn--outline btn--sm">Trouver un Revendeur</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===================== HERO ===================== -->
+        <section class="hero">
+            <div class="hero__bg">
+                <!-- Image : images/hero-cuisine.jpg -->
+                <!-- <img src="images/hero-cuisine.jpg" alt="Cucina Moderna – Cuisine Belge Contemporaine" class="hero__bg-img"> -->
+            </div>
+            <div class="hero__overlay"></div>
+
+            <div class="hero__content">
+                <p class="hero__eyebrow">MADE IN BELGIUM · DEPUIS 1984</p>
+                <h1 class="hero__title">
+                    Cuisines<br>
+                    <em>Uniques</em>
+                </h1>
+                <p class="hero__subtitle">L'élégance belge dans chaque détail, votre style dans chaque design</p>
+                <div class="hero__cta">
+                    <a href="#collections" class="btn btn--primary">Découvrir les Collections</a>
+                    <a href="a-propos.html" class="btn btn--ghost">Découvrir la Marque</a>
+                </div>
+            </div>
+
+            <div class="hero__scroll" aria-hidden="true">
+                <span>Défiler</span>
+                <div class="hero__scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ===================== COLLECTIONS ===================== -->
+        <section class="collections" id="collections">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Collections</span>
+                    <h2 class="section-title">Un Style Pour<br><em>Chaque Univers</em></h2>
+                </div>
+
+                <div class="collections__grid">
+
+                    <div class="collection-card reveal">
+                        <a href="collections/moderne.html" class="collection-card__img-wrap">
+                            <!-- Image : images/collection-moderne.jpg -->
+                            <div class="collection-card__img" style="background: linear-gradient(150deg, #1C1C1C 0%, #3A3530 50%, #2A2520 100%);">
+                                <div class="collection-card__img-overlay"></div>
+                            </div>
+                        </a>
+                        <div class="collection-card__content">
+                            <span class="collection-card__index">01</span>
+                            <h3 class="collection-card__title">Cuisines<br>Modernes</h3>
+                            <p class="collection-card__text">Des lignes épurées, une esthétique minimaliste et une harmonie parfaite entre design et fonctionnalité.</p>
+                            <a href="collections/moderne.html" class="card-link">Découvrir <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <div class="collection-card collection-card--large reveal">
+                        <a href="collections/classique.html" class="collection-card__img-wrap">
+                            <!-- Image : images/collection-classique.jpg -->
+                            <div class="collection-card__img" style="background: linear-gradient(150deg, #6B5840 0%, #8A7055 40%, #7A6248 100%);">
+                                <div class="collection-card__img-overlay"></div>
+                            </div>
+                        </a>
+                        <div class="collection-card__content">
+                            <span class="collection-card__index">02</span>
+                            <h3 class="collection-card__title">Cuisines<br>Classiques</h3>
+                            <p class="collection-card__text">Une élégance intemporelle, des détails artisanaux et de riches textures en bois noble.</p>
+                            <a href="collections/classique.html" class="card-link">Découvrir <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <div class="collection-card reveal">
+                        <a href="collections/exterieur.html" class="collection-card__img-wrap">
+                            <!-- Image : images/collection-exterieur.jpg -->
+                            <div class="collection-card__img" style="background: linear-gradient(150deg, #3A4A36 0%, #506848 40%, #445A40 100%);">
+                                <div class="collection-card__img-overlay"></div>
+                            </div>
+                        </a>
+                        <div class="collection-card__content">
+                            <span class="collection-card__index">03</span>
+                            <h3 class="collection-card__title">Cuisines<br>d'Extérieur</h3>
+                            <p class="collection-card__text">Des designs durables et élégants qui s'intègrent harmonieusement à la nature environnante.</p>
+                            <a href="collections/exterieur.html" class="card-link">Découvrir <span>→</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== À LA UNE ===================== -->
+        <section class="featured">
+            <div class="container">
+                <div class="section-header section-header--flex reveal">
+                    <div>
+                        <span class="section-tag">À la Une</span>
+                        <h2 class="section-title">Nouvelle Collection</h2>
+                    </div>
+                    <a href="collections/moderne.html" class="btn btn--outline">Voir Tout</a>
+                </div>
+
+                <div class="featured__grid">
+
+                    <article class="product-card reveal">
+                        <a href="#" class="product-card__img-wrap">
+                            <!-- Image : images/produit-aura.jpg -->
+                            <div class="product-card__img" style="background: linear-gradient(160deg, #D8D2CB 0%, #EAE4DC 100%);"></div>
+                            <div class="product-card__hover-label">Voir le modèle</div>
+                        </a>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Aura</h3>
+                            <p class="product-card__collection">Collection Moderne</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal">
+                        <a href="#" class="product-card__img-wrap">
+                            <!-- Image : images/produit-tempo.jpg -->
+                            <div class="product-card__img" style="background: linear-gradient(160deg, #C8C2BC 0%, #DAD4CE 100%);"></div>
+                            <div class="product-card__hover-label">Voir le modèle</div>
+                        </a>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Tempo</h3>
+                            <p class="product-card__collection">Collection Moderne</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal">
+                        <a href="#" class="product-card__img-wrap">
+                            <!-- Image : images/produit-etna.jpg -->
+                            <div class="product-card__img" style="background: linear-gradient(160deg, #B8A898 0%, #CCBCAC 100%);"></div>
+                            <div class="product-card__hover-label">Voir le modèle</div>
+                        </a>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Etna</h3>
+                            <p class="product-card__collection">Collection Classique</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal">
+                        <a href="#" class="product-card__img-wrap">
+                            <!-- Image : images/produit-luna.jpg -->
+                            <div class="product-card__img" style="background: linear-gradient(160deg, #A8A09A 0%, #BCB5B0 100%);"></div>
+                            <div class="product-card__hover-label">Voir le modèle</div>
+                        </a>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Luna</h3>
+                            <p class="product-card__collection">Collection Moderne</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== NOTRE HISTOIRE ===================== -->
+        <section class="brand-story">
+            <div class="brand-story__media">
+                <!-- Image : images/brand-atelier.jpg -->
+                <div class="brand-story__media-inner"></div>
+            </div>
+
+            <div class="brand-story__content reveal">
+                <span class="section-tag section-tag--light">Notre Marque</span>
+                <h2 class="brand-story__title">
+                    Depuis 1984,<br>l'Excellence<br><em>Belge</em>
+                </h2>
+                <p class="brand-story__text">
+                    Cucina Moderna s'impose depuis plus de 40 ans comme l'un des fabricants de cuisines les plus prestigieux de Belgique. Chaque création incarne la rencontre parfaite entre l'artisanat traditionnel et les technologies les plus modernes.
+                </p>
+
+                <div class="brand-story__stats">
+                    <div class="stat">
+                        <span class="stat__number">40+</span>
+                        <span class="stat__label">Ans d'Expérience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">50+</span>
+                        <span class="stat__label">Pays</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">200+</span>
+                        <span class="stat__label">Modèles</span>
+                    </div>
+                </div>
+
+                <a href="a-propos.html" class="btn btn--gold">Lire Notre Histoire</a>
+            </div>
+        </section>
+
+        <!-- ===================== CATALOGUE ===================== -->
+        <section class="catalog-banner reveal">
+            <div class="container">
+                <div class="catalog-banner__inner">
+                    <div class="catalog-banner__text">
+                        <span class="section-tag">Catalogue</span>
+                        <h2 class="catalog-banner__title">Télécharger le Catalogue<br><em>Collections 2025</em></h2>
+                        <p>Découvrez tous nos modèles, options de couleurs et suggestions de configuration.</p>
+                    </div>
+                    <a href="#" class="btn btn--primary">Télécharger le Catalogue</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== ACTUALITÉS ===================== -->
+        <section class="inspiration">
+            <div class="container">
+                <div class="section-header section-header--flex reveal">
+                    <div>
+                        <span class="section-tag">Actualités</span>
+                        <h2 class="section-title">Inspirations &amp; Projets</h2>
+                    </div>
+                    <a href="actualites.html" class="btn btn--outline">Toutes les Actualités</a>
+                </div>
+
+                <div class="inspiration__grid">
+
+                    <article class="news-card news-card--featured reveal">
+                        <a href="#" class="news-card__img-wrap">
+                            <!-- Image : images/actualite-tendances.jpg -->
+                            <div class="news-card__img" style="background: linear-gradient(145deg, #222 0%, #383028 100%);"></div>
+                        </a>
+                        <div class="news-card__content">
+                            <span class="news-card__tag">Design</span>
+                            <h3 class="news-card__title">Tendances Cuisine 2025 : Minimalisme &amp; Naturel</h3>
+                            <p class="news-card__excerpt">Découvrez les tendances les plus marquantes de l'année et les collections Cucina Moderna qui les incarnent avec élégance.</p>
+                            <a href="#" class="card-link">Lire l'article <span>→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="news-card reveal">
+                        <a href="#" class="news-card__img-wrap">
+                            <!-- Image : images/actualite-showroom.jpg -->
+                            <div class="news-card__img" style="background: linear-gradient(145deg, #5A5050 0%, #706868 100%);"></div>
+                        </a>
+                        <div class="news-card__content">
+                            <span class="news-card__tag">Projet</span>
+                            <h3 class="news-card__title">Nouveau Showroom à Bruxelles</h3>
+                            <a href="#" class="card-link">Lire l'article <span>→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="news-card reveal">
+                        <a href="#" class="news-card__img-wrap">
+                            <!-- Image : images/actualite-eco.jpg -->
+                            <div class="news-card__img" style="background: linear-gradient(145deg, #4A5A46 0%, #607058 100%);"></div>
+                        </a>
+                        <div class="news-card__content">
+                            <span class="news-card__tag">Durabilité</span>
+                            <h3 class="news-card__title">Notre Certification Éco-Responsable</h3>
+                            <a href="#" class="card-link">Lire l'article <span>→</span></a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== NEWSLETTER ===================== -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter__inner reveal">
+                    <div class="newsletter__text">
+                        <h2 class="newsletter__title">Restez<br><em>Inspiré</em></h2>
+                        <p>Abonnez-vous à notre newsletter pour recevoir nos nouvelles collections, offres exclusives et inspirations design.</p>
+                    </div>
+                    <div>
+                        <form class="newsletter__form" id="newsletterForm" novalidate>
+                            <input type="email" name="email" placeholder="Votre adresse e-mail" class="newsletter__input" required aria-label="Adresse e-mail">
+                            <button type="submit" class="btn btn--primary">S'abonner</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo" aria-label="Cucina Moderna – Accueil">
+                        <span class="footer__logo-cucina">CUCINA</span>
+                        <span class="footer__logo-moderna">MODERNA</span>
+                    </a>
+                    <p class="footer__tagline">Belgian Craftsmanship. Beauté Intemporelle.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Pinterest">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.97 1.172-4.97s-.299-.598-.299-1.482c0-1.388.806-2.428 1.808-2.428.852 0 1.264.64 1.264 1.408 0 .858-.546 2.14-.828 3.33-.236.995.499 1.806 1.476 1.806 1.771 0 3.132-1.867 3.132-4.563 0-2.387-1.715-4.054-4.162-4.054-2.833 0-4.498 2.124-4.498 4.319 0 .855.328 1.771.738 2.271a.3.3 0 0 1 .069.285c-.075.311-.243.995-.276 1.134-.044.183-.145.222-.333.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.966-.527-2.292-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="YouTube">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer__nav" aria-label="Navigation pied de page">
+                    <div class="footer__col">
+                        <h4>Collections</h4>
+                        <a href="collections/moderne.html">Cuisines Modernes</a>
+                        <a href="collections/classique.html">Cuisines Classiques</a>
+                        <a href="collections/exterieur.html">Cuisines d'Extérieur</a>
+                        <a href="collections/living.html">Espaces de Vie</a>
+                        <a href="collections/tables-chaises.html">Tables &amp; Chaises</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4>La Marque</h4>
+                        <a href="a-propos.html">À Propos</a>
+                        <a href="durabilite.html">Durabilité</a>
+                        <a href="actualites.html">Actualités</a>
+                        <a href="carrieres.html">Carrières</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Assistance</h4>
+                        <a href="contact.html">Contact</a>
+                        <a href="garantie.html">Garantie</a>
+                        <a href="promotions.html">Promotions</a>
+                        <a href="revendeurs.html">Trouver un Revendeur</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Contact</h4>
+                        <p>info@cucinamoderna.be</p>
+                        <p>+324 919 174 11</p>
+                        <p>Rue du Commerce 45<br>1000 Bruxelles, Belgique</p>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="footer__bottom">
+                <p>© 2025 Cucina Moderna. Tous droits réservés.</p>
+                <div class="footer__legal">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Politique de cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
