@@ -235,7 +235,7 @@ p { max-width: 60ch; }
     height: 46px;
     width: auto;
     display: block;
-    filter: brightness(0) invert(1);
+    filter: drop-shadow(0 1px 6px rgba(0, 0, 0, 0.55));
     transition: filter var(--t) var(--ease);
 }
 .header.is-scrolled .header__logo-img {
