@@ -231,24 +231,16 @@ p { max-width: 60ch; }
     line-height: 1;
     flex-shrink: 0;
 }
-.logo-cucina {
-    font-family: var(--font-serif);
-    font-size: 21px;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    color: var(--color-white);
-    transition: color var(--t) var(--ease);
+.header__logo-img {
+    height: 46px;
+    width: auto;
+    display: block;
+    filter: brightness(0) invert(1);
+    transition: filter var(--t) var(--ease);
 }
-.logo-moderna {
-    font-family: var(--font-sans);
-    font-size: 8.5px;
-    font-weight: 300;
-    letter-spacing: 0.4em;
-    color: rgba(255, 255, 255, 0.6);
-    transition: color var(--t) var(--ease);
+.header.is-scrolled .header__logo-img {
+    filter: none;
 }
-.header.is-scrolled .logo-cucina  { color: var(--color-primary); }
-.header.is-scrolled .logo-moderna { color: var(--color-gray); }
 
 /* Nav */
 .header__nav {
@@ -825,24 +817,14 @@ p { max-width: 60ch; }
 }
 
 .footer__logo {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
+    display: inline-block;
     margin-bottom: 18px;
 }
-.footer__logo-cucina {
-    font-family: var(--font-serif);
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    color: var(--color-white);
-}
-.footer__logo-moderna {
-    font-family: var(--font-sans);
-    font-size: 8px;
-    font-weight: 300;
-    letter-spacing: 0.42em;
-    color: rgba(255, 255, 255, 0.45);
+.footer__logo-img {
+    height: 42px;
+    width: auto;
+    display: block;
+    filter: brightness(0) invert(1);
 }
 
 .footer__tagline {
